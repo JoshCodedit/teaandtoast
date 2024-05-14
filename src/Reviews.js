@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 function Reviews(props) {
     const reviewStyle = {
-        width: '90%',
+        maxWidth: '450px',
         maxHeight: '450px',
         objectFit: 'cover'
     };
