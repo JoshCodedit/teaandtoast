@@ -1,12 +1,11 @@
-import './App.css';
-import React from 'react';
-import Header from "./Header"
-import News from "./News"
-import newsData from "./newsData"
-import Reviews from "./Reviews"
 import reviewsData from "./reviewsData"
-import RecordStoreSpotlight from "./RecordStoreSpotlight"
-import NewsletterForm from './NewsletterForm';
+import newsData from "./newsData"
+import React, { useState } from "react";
+import News from "./News"; // Adjust the import path as necessary
+import Header from "./Header"; // Adjust the import path as necessary
+import Reviews from "./Reviews"; // Adjust the import path as necessary
+import RecordStoreSpotlight from "./RecordStoreSpotlight"; // Adjust the import path as necessary
+import NewsletterForm from "./NewsletterForm"; // Adjust the import path as necessary
 
 function App() {
   const imageStyle = {
@@ -15,15 +14,10 @@ function App() {
     // objectFit: 'cover'
   };
 
-  // Latest News
-  const [page, setPage] = React.useState(1);
+  const [page, setPage] = useState(1);
 
-  const nextPage = () => {
-    setPage(page + 1);
-  };
-
-  const prevPage = () => {
-    setPage(page - 1);
+  const changePage = () => {
+    setPage(page === 1 ? 2 : 1);
   };
 
   const news = newsData.news.map(item => (
@@ -53,12 +47,11 @@ function App() {
           <h2 className='news-header'>Latest News</h2>
           {news}
         </div>
-        {page === 1 && (
-          <button className='nextButton' onClick={nextPage}>Next Page</button>
-        )}
-        {page === 2 && (
-          <button className='prevButton' onClick={prevPage}>Prev Page</button>
-        )}
+          <button 
+            className={page === 1 ? 'nextButton' : 'prevButton'} 
+            onClick={changePage}>
+            {page === 1 ? 'Next Page' : 'Prev Page'}
+          </button>
         <div className='reviews'>
           <h2 className='reviews-header'>Latest Reviews</h2>
           {reviews}
@@ -77,4 +70,4 @@ function App() {
   );
 }
 
-export default App
+export default App;
