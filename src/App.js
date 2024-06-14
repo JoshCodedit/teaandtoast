@@ -1,17 +1,16 @@
 import reviewsData from "./data/reviewsData"
 import newsData from "./data/newsData"
 import React, { useState } from "react";
-import News from "./components/News"; // Adjust the import path as necessary
-import Header from "./components/Header"; // Adjust the import path as necessary
-import Reviews from "./components/Reviews"; // Adjust the import path as necessary
-import RecordStoreSpotlight from "./components/RecordStoreSpotlight"; // Adjust the import path as necessary
-import NewsletterForm from "./components/NewsletterForm"; // Adjust the import path as necessary
+import News from "./components/News"; 
+import Header from "./components/Header"; 
+import Reviews from "./components/Reviews"; 
+import RecordStoreSpotlight from "./components/RecordStoreSpotlight"; 
+import NewsletterForm from "./components/NewsletterForm"; 
 
 function App() {
   const imageStyle = {
     width: '300px',
     maxHeight: '200px',
-    // objectFit: 'cover'
   };
 
   const [page, setPage] = useState(1);

@@ -19,12 +19,12 @@ function Header(){
             </nav>
             <nav className="navbar-dropdown">
         <select>
-          <option value="index.html">Home</option>
-          <option value="reviews.html">Reviews</option>
-          <option value="video_reviews.html">Video Reviews</option>
-          <option value="submit_music.html">Submit Your Music</option>
-          <option value="about_us.html">About Us</option>
-          <option value="contact_us.html">Contact Us</option>
+          <option value="#">Home</option>
+          <option value="#">Reviews</option>
+          <option value="#">Video Reviews</option>
+          <option value="#">Submit Your Music</option>
+          <option value="#">About Us</option>
+          <option value="#">Contact Us</option>
         </select>
       </nav>
         </div>

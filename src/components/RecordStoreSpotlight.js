@@ -3,12 +3,11 @@ import React, { useState, useEffect } from 'react';
 function RecordStoreSpotlight(props) {
     const [currentStore, setCurrentStore] = useState('recordStore1');
     const [nextStore, setNextStore] = useState('recordStore2');
-    let interval; // Declare interval variable here
+    let interval; 
 
     useEffect(() => {
-        interval = setInterval(togglePages, 9000); // Assign interval here
+        interval = setInterval(togglePages, 9000); 
 
-        // Clear interval on component unmount
         return () => clearInterval(interval);
     }, []);
 
@@ -53,7 +52,7 @@ function RecordStoreSpotlight(props) {
                     <h3 className='store-location'>Purley, Croydon</h3>
                 </h2>
                 <br />
-                <img className='store-image' src="./Images/Ten_Pin_Records.jpg" alt="Image of Ten Pin Records" style={props.imageStyle} />
+                <img className='store-image' src="./Images/Ten_Pin_Records.jpg" alt="Ten Pin Records" style={props.imageStyle} />
                 <br />
                 <p className='store-bio'>Ten Pin Records is a family affair; Docherty's husband, aunt and three children all help.
                     Purley-based record shop. Discover a diverse collection of LPs, singles, CDs, and books
@@ -69,7 +68,7 @@ function RecordStoreSpotlight(props) {
                     <h3 className='store-location'>Penge, Lewisham</h3>
                 </h2>
                 <br />
-                <img className='store-image' src="./Images/Revolution_Records.jpg" alt="Image of Revolution Records" style={props.imageStyle} />
+                <img className='store-image' src="./Images/Revolution_Records.jpg" alt="Revolution Records" style={props.imageStyle} />
                 <br />
                 <p className='store-bio'>Revolution Records Penge specialises in selling great condition used vinyl 
                     along with a selection of new releases. Dog-friendly shop also stocking CDs, 
