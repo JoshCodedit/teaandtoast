@@ -9,12 +9,12 @@ function Header(){
             
             <nav className="navbar">
                 <ul>
-                    <li><a class="active" href="index.html">Home</a></li>
-                    <li><a href="reviews.html">Reviews</a></li>
-                    <li><a href="index.html">Video Reviews</a></li>
-                    <li><a href="submit_music.html">Submit Your Music</a></li>
-                    <li><a href="index.html">About Us</a></li>
-                    <li><a href="contact_us.html">Contact Us</a></li>
+                    <li><a class="active" href="#">Home</a></li>
+                    <li><a href="#">Reviews</a></li>
+                    <li><a href="#">Video Reviews</a></li>
+                    <li><a href="#">Submit Your Music</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
                 </ul>
             </nav>
             <nav className="navbar-dropdown">
