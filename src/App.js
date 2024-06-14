@@ -1,11 +1,11 @@
-import reviewsData from "./reviewsData"
-import newsData from "./newsData"
+import reviewsData from "./data/reviewsData"
+import newsData from "./data/newsData"
 import React, { useState } from "react";
-import News from "./News"; // Adjust the import path as necessary
-import Header from "./Header"; // Adjust the import path as necessary
-import Reviews from "./Reviews"; // Adjust the import path as necessary
-import RecordStoreSpotlight from "./RecordStoreSpotlight"; // Adjust the import path as necessary
-import NewsletterForm from "./NewsletterForm"; // Adjust the import path as necessary
+import News from "./components/News"; // Adjust the import path as necessary
+import Header from "./components/Header"; // Adjust the import path as necessary
+import Reviews from "./components/Reviews"; // Adjust the import path as necessary
+import RecordStoreSpotlight from "./components/RecordStoreSpotlight"; // Adjust the import path as necessary
+import NewsletterForm from "./components/NewsletterForm"; // Adjust the import path as necessary
 
 function App() {
   const imageStyle = {

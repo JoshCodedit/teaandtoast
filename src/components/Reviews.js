@@ -27,18 +27,18 @@ function Reviews(props) {
         <div className="reviews-item">
             <div className="image-container" onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>
                 <a href={props.item.url} >
-                    <img 
- 
-                        className="reviews-image" 
-                        src={props.item['image-url']} 
-                        alt={props.item.alt} 
-                        style={reviewStyle} 
+                    <img
+
+                        className="reviews-image"
+                        src={props.item['image-url']}
+                        alt={props.item.alt}
+                        style={reviewStyle}
                     />
-                <p className="artist" style={pStyle}>{props.item.artist}</p>
-                <p className="album" style={pStyle} >{props.item.album}</p>
-                <div className="reviewed" style={pStyle} >
-                    <span className="grey">Reviewed by</span><p>{props.item.reviewed}</p>
-                </div>
+                    <p className="artist" style={pStyle}>{props.item.artist}</p>
+                    <p className="album" style={pStyle} >{props.item.album}</p>
+                    <div className="reviewed" style={pStyle} >
+                        <span className="grey">Reviewed by</span><p>{props.item.reviewed}</p>
+                    </div>
                 </a>
             </div>
         </div>
